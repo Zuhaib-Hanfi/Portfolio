@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hanfi Portfolio</title>
+    <link rel="Icon" href="./favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -19,14 +20,32 @@
     <!-- HEADER -->
     <header>
         <!-- NAVIGATION BAR -->
-        <div class="navbar">
-            <!-- Left Section of Navbar -->
-            <div class="left">
+        <nav class="navbar">
+            <!-- Hamburger -->
+            <input type="checkbox" id="hamburger-active">
+            <label for="hamburger-active" class="open-hamburger-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
+                    fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <div class="links-container">
+                <label for="hamburger-active" class="close-hamburger-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
+                        fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <!-- Left Section of Navbar -->
+                <!-- <div class="left"> -->
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Eduaction</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
+                <!-- </div> -->
             </div>
             <!-- Right Section of Navbar -->
             <div class="right">
@@ -34,7 +53,7 @@
                 <a href="https://x.com/ZuhaibHanfi" class="fab fa-twitter"></a> <!-- X (Twitter) Icon -->
                 <a href="mailto:hanfizuhaib@gmail.com" class="fas fa-envelope"></a> <!-- Mail Icon -->
             </div>
-        </div>
+        </nav>
     </header>
     <!-- Main -->
     <main>
