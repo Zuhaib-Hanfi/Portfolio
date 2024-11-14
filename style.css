@@ -1,0 +1,536 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For hiding the scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+/* BODY */
+body {
+    /* background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    background-color: #0A192F;
+}
+
+/* HEADER */
+header {
+    height: 10vh;
+    margin-bottom: 5vh;
+}
+
+/* Navigation bar */
+.navbar {
+    height: 10vh;
+    background-color: #0a192f83;
+    border: 1px solid #3E4555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 4px 8px 4px #3e455576;
+    z-index: 1;
+}
+
+/* Left Side of navbar */
+.left {
+    width: 45vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    padding: 0.4rem;
+}
+
+.left>a {
+    text-decoration: none;
+    color: #CACAEE;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Nova Square;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    padding: 0.4rem;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Hover property for left side navbar */
+.left>a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: 0 0 8px 2px rgba(245, 245, 245, 0.419);
+    border-radius: 12px;
+    scale: 1.02;
+}
+
+/* Right side of navbar */
+.right {
+    width: 20vw;
+    height: 8vh;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.4rem;
+}
+
+.right>a {
+    text-decoration: none;
+    color: #CACAEE;
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    border: 1px solid transparent;
+}
+
+/* Hover property for right side of navbar */
+.right>a:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: 0 0 8px 2px rgba(245, 245, 245, 0.419);
+    color: #CACAEE;
+    border-radius: 15px;
+    scale: 1.1;
+}
+
+/* SECTION 1 : HOME */
+#home {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 60vh;
+    padding-top: 30vh;
+    padding-bottom: 5vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+
+    overflow: hidden;
+    position: relative;
+    /* background-color: olive; */
+}
+
+/* Introduction section */
+.intro-name {
+    width: 60vw;
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5rem;
+    font-family: Silkscreen, sans-serif;
+    color: #CACAEE;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: #3e455576; */
+    /* border: 1px solid white; */
+    box-shadow: 0 0 8px 4px #3e455576;
+    border-radius: 10px;
+
+    animation: load 3.5s ease-out 0.1s 1 forwards;
+    position: relative;
+}
+
+.intro-name>span {
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+.intro-about {
+    width: 60vw;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.8rem;
+    /* font-weight: bold; */
+    font-family: cursive, montserrat, sans-serif;
+    color: #CACAEE;
+    text-align: justify;
+    padding: 1rem;
+    overflow: hidden;
+    /* background-color: #3e455576;
+    border: 1px solid white; */
+    box-shadow: 0 0 8px 4px #3e455576;
+    border-radius: 10px;
+
+    animation: load 2.5s ease-out 0.1s 1 forwards;
+    position: relative;
+}
+
+/* Animation for intro section */
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/*SECTION 2 : ABOUT*/
+/* css for both about and eduction section */
+#about,
+#education {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 60vh;
+    margin-top: 5vh;
+    padding: 15vh 20vw 2vh 20vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1rem;
+    /* background-color: olivedrab; */
+}
+
+#about>h2,
+#education>h2,
+#skills>h2,
+#contact>h2 {
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+    font-family: nova square;
+    color: white;
+}
+
+/* General css for images in section 2 & 3 */
+.image {
+    height: 38vh;
+    width: 28vh;
+    overflow: hidden;
+    border: 1px solid white;
+    box-shadow: 0 0 8px 4px #3e455576;
+    border-radius: 10px;
+}
+
+.img1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    justify-self: start;
+    align-self: start;
+
+    animation: left-slide 2.5s ease-out 0.5s 1 forwards;
+}
+
+.img2 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    justify-self: end;
+    align-self: end;
+
+    animation: left-slide 2s ease-out 0.5s 1 forwards;
+}
+
+/* General CSS for Paragraphs in Section 2 & 3 */
+.paragraph {
+    overflow: hidden;
+    background-color: transparent;
+    /* border: 1px solid white; */
+    box-shadow: 0 0 8px 4px #3e455576;
+    border-radius: 10px;
+    color: #CACAEE;
+    font-size: 1.15rem;
+    font-family: cursive, montserrat, sans-serif;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.para1 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: end;
+    align-self: start;
+
+    animation: left-slide 2s ease-out 0.5s 1 forwards;
+}
+
+
+.para2 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    justify-self: start;
+    align-self: end;
+
+    animation: left-slide 2.5s ease-out 0.5s 1 forwards;
+}
+
+/* SECTION 2: ANIMATION */
+@keyframes left-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-600px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+/* SECTION 3 : Education */
+.para3 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: start;
+    animation: right-slide 0.5s ease-out 0.5s 1 forwards;
+}
+
+.para4 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    justify-self: end;
+    justify-self: end;
+    animation: right-slide 1.5s ease-out 0.5s 1 forwards;
+}
+
+.img3 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    justify-self: end;
+    align-self: start;
+    animation: right-slide 2s ease-out 0.5s 1 forwards;
+}
+
+
+.img4 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: start;
+    align-self: end;
+    animation: right-slide 1s ease-out 0.5s 1 forwards;
+}
+
+/* Animation for section 3: education */
+
+@keyframes right-slide {
+    from {
+        transform: translateX(600px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Parallax  GFG Image */
+
+.gfg {
+    width: 100vw;
+    height: 30vh;
+    margin-top: 10vh;
+    background-image: url(gfg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 15vh;
+}
+
+/* SECTION 4: SKILLS  */
+
+#skills {
+    min-height: 60vh;
+    padding: 15vh 20vw 2vh 20vw;
+    /* margin-top: 5vh; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 1fr;
+    gap: 2rem;
+    overflow: hidden;
+
+
+    /* background-color: olive; */
+}
+
+#skills>h2 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    justify-self: center;
+    align-self: center;
+}
+
+.para5 {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    animation: slide-bottom 2.8s ease-out 0.5s 1 forwards;
+}
+
+.para6 {
+    max-height: 284px;
+    text-align: start;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-left: 1.5rem;
+    justify-self: center;
+    align-self: center;
+    animation: slide-bottom 2s ease-out 0.5s 1 forwards;
+}
+
+.img5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    animation: slide-bottom 2.4s ease-out 0.5s 1 forwards;
+}
+
+.img6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    animation: slide-bottom 1.6s ease-out 0.5s 1 forwards;
+}
+
+/* Animation for Section 4: Skills */
+@keyframes slide-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* FOOTER  */
+/* Section 5: contact */
+
+#contact {
+    padding: 2vh 20vw 2vh 20vw;
+    margin-top: 20vh;
+    animation: from-left 2.5s ease-out 0.5s 1 forwards;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+}
+
+form>button {
+    width: 6rem;
+    justify-self: center;
+}
+
+/* Contact Animation */
+@keyframes from-left {
+    from {
+        transform: translateX(600px) scale(0) rotate(360deg);
+    }
+
+    to {
+        transform: translateX(0px) scale(1);
+    }
+}
+
+
+/* FOOT */
+.foot {
+    background-color: #06152a;
+    padding: 2vh 20vw 2vh 20vw;
+    margin-top: 10vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.foot>p {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    color: #CACAEE;
+    font-family: nova square;
+}
+
+@media (max-width:600px) {
+    #home {
+        padding: 5vh;
+    }
+
+    .intro-name,
+    .intro-about {
+        font-size: 5vw;
+    }
+
+    .intro-name>span {
+        font-size: 10vw;
+    }
+
+    #skills,
+    #about,
+    #education {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr repeat(4, 1fr);
+        gap: 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        width: 30vh;
+    }
+
+    #about>h2,
+    .para1,
+    .img1,
+    .para2,
+    .img2,
+    #eduaction>h2,
+    .para3,
+    .img3,
+    .para4,
+    .img4,
+    #skills>h2,
+    .para5,
+    .img5,
+    .para6,
+    .img6 {
+        grid-column: 1/2;
+        grid-row: auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+}
