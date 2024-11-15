@@ -1,4 +1,4 @@
-/* universal selector */
+/* Universal selector for resetting margins, padding, and box sizing*/
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +6,25 @@
     box-sizing: border-box;
 }
 
-/* For hiding the scrollbar */
+/* Hiding the scrollbar (webkit browsers only) */
 ::-webkit-scrollbar {
     display: none;
 }
 
-
-/* BODY */
+/* BODY styling*/
 body {
-    /* background-image: url(./image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
     background-color: #0A192F;
     max-width: 100vw;
 }
 
-/* HEADER */
+/* HEADER STYLING */
+
 header {
     height: 10vh;
     margin-bottom: 5vh;
 }
 
-/* Navigation bar */
+/* Navigation Bar styling */
 .navbar {
     height: 10vh;
     background-color: #0a192f83;
@@ -45,7 +41,7 @@ header {
     z-index: 1;
 }
 
-/* Left Side of navbar */
+/* Container of Navigation link styling*/
 .links-container {
     width: 45vw;
     height: 8vh;
@@ -56,6 +52,7 @@ header {
     padding: 0.4rem;
 }
 
+/* Navigation links styling */
 .links-container>a {
     text-decoration: none;
     color: #CACAEE;
@@ -68,21 +65,14 @@ header {
     padding: 0.4rem;
 }
 
-/* Hiding the hamburger icons */
+/* Hiding the hamburger icons for larger screen*/
 #hamburger-active,
 .open-hamburger-button,
 .close-hamburger-button {
     display: none;
 }
 
-.title {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* Hover property for left side navbar */
-
+/* Hover property for anchor tags and buttons on the NavBar */
 .links-container>a:hover,
 .close-hamburger-button,
 .open-hamburger-button {
@@ -93,7 +83,7 @@ header {
     scale: 1.02;
 }
 
-/* Right side of navbar */
+/* Right side of navbar with social icons styling */
 .right {
     width: 20vw;
     height: 8vh;
@@ -104,6 +94,7 @@ header {
     padding: 0.4rem;
 }
 
+/* Social icons styling */
 .right>a {
     text-decoration: none;
     color: #CACAEE;
@@ -112,7 +103,7 @@ header {
     border: 1px solid transparent;
 }
 
-/* Hover property for right side of navbar */
+/* Hover property for Social Icons */
 .right>a:hover {
     background-color: transparent;
     border: 1px solid white;
@@ -122,7 +113,8 @@ header {
     scale: 1.1;
 }
 
-/* SECTION 1 : HOME */
+/* MAIN STYLING */
+/* SECTION 1 : HOME styling*/
 #home {
     display: grid;
     justify-content: center;
@@ -134,13 +126,11 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 1rem;
-
     overflow: hidden;
     position: relative;
-    /* background-color: olive; */
 }
 
-/* Introduction section */
+/* Introduction section styling*/
 .intro-name {
     width: 60vw;
     justify-self: center;
@@ -150,41 +140,36 @@ header {
     color: #CACAEE;
     text-align: center;
     overflow: hidden;
-    /* background-color: #3e455576; */
-    /* border: 1px solid white; */
     box-shadow: 0 0 8px 4px #3e455576;
     border-radius: 10px;
-
-    animation: load 3.5s ease-out 0.1s 1 forwards;
     position: relative;
+    animation: load 3.5s ease-out 0.1s 1 forwards;
 }
 
+/* My Name styling */
 .intro-name>span {
     color: #ffffff;
     font-size: 5rem;
 }
 
+/* Introduction-about styling */
 .intro-about {
     width: 60vw;
     justify-self: center;
     align-self: center;
     font-size: 1.8rem;
-    /* font-weight: bold; */
     font-family: montserrat, sans-serif;
     color: #CACAEE;
     text-align: justify;
     padding: 1rem;
     overflow: hidden;
-    /* background-color: #3e455576;
-    border: 1px solid white; */
     box-shadow: 0 0 8px 4px #3e455576;
     border-radius: 10px;
-
-    animation: load 2.5s ease-out 0.1s 1 forwards;
     position: relative;
+    animation: load 2.5s ease-out 0.1s 1 forwards;
 }
 
-/* Animation for intro section */
+/* Animation for Introduction section || Home section */
 @keyframes load {
     from {
         opacity: 0;
@@ -198,9 +183,9 @@ header {
 }
 
 
+/*SECTION 2 : ABOUT Styling*/
 
-/*SECTION 2 : ABOUT*/
-/* css for both about and eduction section */
+/* About and Eduction both section styling */
 #about,
 #education {
     display: grid;
@@ -214,9 +199,9 @@ header {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 1.5rem;
     overflow: hidden;
-    /* background-color: olivedrab; */
 }
 
+/* Headings of About, Eduction, Skills, Contact Section styling */
 #about>h2,
 #education>h2,
 #skills>h2,
@@ -228,7 +213,7 @@ header {
     color: white;
 }
 
-/* General css for images in section 2 & 3 */
+/* General Styling for About, Eduction and Skills section's Images */
 .image {
     height: 20rem;
     width: 15rem;
@@ -238,25 +223,25 @@ header {
     border-radius: 10px;
 }
 
-.img1 {
+/* First Image of About section styling */
+.about-img1 {
     grid-column: 1/2;
     grid-row: 1/3;
     justify-self: start;
     align-self: start;
-
     animation: left-slide 2.5s ease-out 0.5s 1 forwards;
 }
 
-.img2 {
+/* Second Image of About section styling */
+.about-img2 {
     grid-column: 3/4;
     grid-row: 2/4;
     justify-self: end;
     align-self: end;
-
     animation: left-slide 2s ease-out 0.5s 1 forwards;
 }
 
-/* General CSS for Paragraphs in Section 2 & 3 */
+/* General Styling for About, Eduction and Skills section's paragraphs and for inputs in Conatct section */
 .paragraph {
     overflow: hidden;
     background-color: transparent;
@@ -270,17 +255,17 @@ header {
     text-align: justify;
 }
 
-.para1 {
+/* First Paragraph of About section styling */
+.about-para1 {
     grid-column: 2/4;
     grid-row: 1/2;
     justify-self: end;
     align-self: start;
-
     animation: left-slide 2s ease-out 0.5s 1 forwards;
 }
 
-
-.para2 {
+/* Second paragraph of About section styling */
+.about-para2 {
     grid-column: 1/3;
     grid-row: 3/4;
     justify-self: start;
@@ -289,7 +274,7 @@ header {
     animation: left-slide 2.5s ease-out 0.5s 1 forwards;
 }
 
-/* SECTION 2: ANIMATION */
+/* About Section ANIMATION */
 @keyframes left-slide {
     from {
         opacity: 0;
@@ -302,9 +287,10 @@ header {
     }
 }
 
+/* Eduction Section Styling */
 
-/* SECTION 3 : Education */
-.para3 {
+/* First Paragraph of Education section styling */
+.education-para1 {
     grid-column: 1/3;
     grid-row: 1/2;
     justify-self: start;
@@ -312,7 +298,8 @@ header {
     animation: right-slide 0.5s ease-out 0.5s 1 forwards;
 }
 
-.para4 {
+/* Second paragraph of Edcuation section styling */
+.education-para2 {
     grid-column: 2/4;
     grid-row: 3/4;
     justify-self: end;
@@ -320,7 +307,8 @@ header {
     animation: right-slide 1.5s ease-out 0.5s 1 forwards;
 }
 
-.img3 {
+/* First Image of Education section styling */
+.education-img1 {
     grid-column: 3/4;
     grid-row: 1/3;
     justify-self: end;
@@ -328,8 +316,8 @@ header {
     animation: right-slide 2s ease-out 0.5s 1 forwards;
 }
 
-
-.img4 {
+/* Second Image of Education section styling */
+.education-img2 {
     grid-column: 1/2;
     grid-row: 2/4;
     justify-self: start;
@@ -337,8 +325,7 @@ header {
     animation: right-slide 1s ease-out 0.5s 1 forwards;
 }
 
-/* Animation for section 3: education */
-
+/* Education Section Animation */
 @keyframes right-slide {
     from {
         transform: translateX(600px);
@@ -351,8 +338,7 @@ header {
     }
 }
 
-/* Parallax  GFG Image */
-
+/* GFG image Paralax effect stying */
 .gfg {
     width: 100vw;
     height: 30vh;
@@ -364,12 +350,10 @@ header {
     background-position: 0 15vh;
 }
 
-/* SECTION 4: SKILLS  */
-
+/* SKILLS Section Styling */
 #skills {
     min-height: 60vh;
     padding: 15vh 20vw 2vh 20vw;
-    /* margin-top: 5vh; */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -377,11 +361,9 @@ header {
     grid-template-rows: 0.3fr 0.5fr 1fr;
     gap: 2rem;
     overflow: hidden;
-
-
-    /* background-color: olive; */
 }
 
+/* Heading of Skills section styling */
 #skills>h2 {
     grid-row: 1/2;
     grid-column: 1/4;
@@ -389,7 +371,8 @@ header {
     align-self: center;
 }
 
-.para5 {
+/* First paragraph of Skills section styling */
+.skills-para1 {
     grid-column: 1/4;
     grid-row: 2/3;
     text-align: center;
@@ -398,8 +381,8 @@ header {
     animation: slide-bottom 2.8s ease-out 0.5s 1 forwards;
 }
 
-.para6 {
-    /* height: 20rem; */
+/* Second Paragraph of Skills section styling */
+.skills-para2 {
     width: 15rem;
     text-align: start;
     grid-column: 2/3;
@@ -410,8 +393,8 @@ header {
     animation: slide-bottom 2s ease-out 0.5s 1 forwards;
 }
 
-
-.img5 {
+/* First Image of Skills section styling */
+.skills-img1 {
     grid-column: 1/2;
     grid-row: 3/4;
     justify-self: center;
@@ -419,7 +402,8 @@ header {
     animation: slide-bottom 2.4s ease-out 0.5s 1 forwards;
 }
 
-.img6 {
+/* Second Image of Skills section styling */
+.skills-img2 {
     grid-column: 3/4;
     grid-row: 3/4;
     justify-self: center;
@@ -427,7 +411,7 @@ header {
     animation: slide-bottom 1.6s ease-out 0.5s 1 forwards;
 }
 
-/* Animation for Section 4: Skills */
+/* Skills Section Animation */
 @keyframes slide-bottom {
     from {
         opacity: 0;
@@ -441,18 +425,17 @@ header {
 }
 
 
-/* FOOTER  */
-/* Section 5: contact */
-
+/* FOOTER  STYLING*/
+/* Contact Section Styling */
 #contact {
     padding: 2vh 20vw 2vh 20vw;
     margin-top: 20vh;
     animation: from-left 2.5s ease-out 0.5s 1 forwards;
-    /* background-color: olive; */
 }
 
+/* Contact form styling */
 form {
-    /* width: 60vw; */
+    padding: 0 2vw 0 2vw;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -461,6 +444,7 @@ form {
     row-gap: 1rem;
 }
 
+/* Submit button styling */
 form>button {
     width: 6rem;
     justify-self: center;
@@ -469,13 +453,14 @@ form>button {
     align-items: center;
 }
 
+/* Button,input,textarea styling */
 form>button,
 form>input,
 form>textarea {
     border: none;
 }
 
-/* Contact Animation */
+/* Contact Section Animation */
 @keyframes from-left {
     from {
         transform: translateX(600px) scale(0) rotate(360deg);
@@ -487,7 +472,7 @@ form>textarea {
 }
 
 
-/* FOOT */
+/* FOOT styling */
 .foot {
     background-color: #051021;
     padding: 2vh 20vw 2vh 20vw;
@@ -499,6 +484,7 @@ form>textarea {
     grid-template-rows: repeat(2, 1fr);
 }
 
+/* Foot paragraphs styling */
 .foot>p {
     text-align: center;
     justify-self: center;
@@ -507,22 +493,24 @@ form>textarea {
     font-family: nova square;
 }
 
-/* Media Queries */
+
+/* Responsive Design: Apply styles for screens with a maximum width of 800px */
 
 @media (max-width:800px) {
-    /* HAMBURGER NAVBAR */
 
+    /*NAVBAR HAMBURGER RESPONSIVE STYLING*/
     .navbar {
         padding-right: 0.4rem;
         max-width: 100vw;
         height: 8vh;
     }
 
+    /* Icons right side of navbar Responsive styling */
     .right {
         width: 40vw;
     }
 
-
+    /* Links Container responsive stying */
     .links-container {
         overflow: hidden;
         flex-direction: column;
@@ -539,12 +527,14 @@ form>textarea {
         box-shadow: -5px 0 8px 4px #3e455576;
     }
 
+    /* Links inside the Links container Responsive styling */
     .links-container>a {
         box-sizing: border-box;
         height: auto;
         margin: 1rem;
     }
 
+    /* Open and close hamburger buttons styling */
     .open-hamburger-button,
     .close-hamburger-button {
         display: block;
@@ -553,29 +543,30 @@ form>textarea {
         background-color: #0a192fa1;
     }
 
+    /* Close hamburger button styling */
     .close-hamburger-button {
         margin: 0.1rem 0 1rem 0;
     }
 
+    /* links Container styling after checking Hamburger Active */
     #hamburger-active:checked~.links-container {
         left: 0;
         transition: 1s;
     }
 
+    /* Open hamburger Button styling after checking Hamburger Active */
     #hamburger-active:checked~.open-hamburger-button {
         opacity: 0;
     }
 
 
-
-
-
-    /* Home */
+    /* HOME SECTION RESPONSIVE STYLING*/
 
     #home {
         padding: 5vh;
     }
 
+    /* Name and About Styling */
     .intro-name,
     .intro-about {
         font-size: 3.5vw;
@@ -585,6 +576,7 @@ form>textarea {
         font-size: 10vw;
     }
 
+    /* SKILLS SECTION RESPOSNIVE STYLING */
     #skills {
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.5fr repeat(3, 1fr);
@@ -593,6 +585,7 @@ form>textarea {
         align-items: center;
     }
 
+    /* ABOUT SECTION RESPONSIVE STYLING */
     #about,
     #education {
         grid-template-columns: 1fr;
@@ -602,28 +595,22 @@ form>textarea {
         align-items: center;
     }
 
-    /* .image,.para6 {
-        width: 20rem;
-    }
-    .para6{
-        height: 38vh;
-    } */
-
+    /* GRID STYLING FOR ABOUT, EDUCATION, AND SKILLS SECTIONS */
     #about>h2,
-    .para1,
-    .img1,
-    .para2,
-    .img2,
+    .about-para1,
+    .about-img1,
+    .about-para2,
+    .about-img2,
     #eduaction>h2,
-    .para3,
-    .img3,
-    .para4,
-    .img4,
+    .education-para1,
+    .education-img1,
+    .education-para2,
+    .education-img2,
     #skills>h2,
-    .para5,
-    .img5,
-    .para6,
-    .img6 {
+    .skills-para1,
+    .skills-img1,
+    .skills-para2,
+    .skills-img2 {
         grid-column: 1/2;
         grid-row: auto;
         align-self: center;

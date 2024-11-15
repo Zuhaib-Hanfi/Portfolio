@@ -9,28 +9,33 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- Preconnecting to Google's font servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing Google fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Square&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
 
-    
 <body>
+
     <!-- HEADER -->
     <header>
         <!-- NAVIGATION BAR -->
         <nav class="navbar">
-            <!-- Hamburger -->
+            <!-- Hamburger Menu Checkbox-->
             <input type="checkbox" id="hamburger-active">
             <label for="hamburger-active" class="open-hamburger-button">
+                <!-- Hamburger Icon for opening menu -->
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
                     fill="#e8eaed">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
             </label>
+            <!-- Container for Navigation links -->
             <div class="links-container">
+                <!-- Close icon for closing menu -->
                 <label for="hamburger-active" class="close-hamburger-button">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
                         fill="#e8eaed">
@@ -39,16 +44,15 @@
                     </svg>
                 </label>
 
-                <!-- Left Section of Navbar -->
-                <!-- <div class="left"> -->
+                <!-- Navigation Links -->
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Eduaction</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
-                <!-- </div> -->
             </div>
-            <!-- Right Section of Navbar -->
+
+            <!-- Right Section of Navbar with Social Icons -->
             <div class="right">
                 <a class="fab fa-linkedin" href="https://www.linkedin.com/in/zuhaib-hanfi"></a> <!-- LinkedIn Icon -->
                 <a href="https://x.com/ZuhaibHanfi" class="fab fa-twitter"></a> <!-- X (Twitter) Icon -->
@@ -56,7 +60,8 @@
             </div>
         </nav>
     </header>
-    <!-- Main -->
+
+    <!-- Main Ccontent-->
     <main>
         <!-- Section 1 : Home -->
         <section id="home">
@@ -66,17 +71,18 @@
                 challenges.</div>
         </section>
 
-        <!-- Section 2: about -->
+        <!-- Section 2: About -->
         <section id="about">
             <h2>about\</h2>
-            <img src="./about1.jpg" alt="image 1" class="img1 image">
-            <div class="para1 paragraph">I am a passionate and dedicated 3rd-year Computer Science Engineering student
+            <img src="./about1.jpg" alt="image 1" class="about-img1 image">
+            <div class="about-para1 paragraph">I am a passionate and dedicated 3rd-year Computer Science Engineering
+                student
                 at HNB
                 Garhwal University, a prestigious central university in India. My journey in the world
                 of technology is driven by a strong foundation in C and C++, and I am deeply enthusiastic about Data
                 Structures and Algorithms (DSA).</div>
-            <img src="./about2.jpg" alt="image 2" class="img2 image">
-            <div class="para2 paragraph">I revel in the challenges and problem-solving aspects of DSA, constantly
+            <img src="./about2.jpg" alt="image 2" class="about-img2 image">
+            <div class="about-para2 paragraph">I revel in the challenges and problem-solving aspects of DSA, constantly
                 seeking to
                 enhance my skills and knowledge in this area. With each new project and problem, I am motivated to push
                 the boundaries of my understanding and strive for excellence in the ever-evolving tech landscape.</div>
@@ -85,14 +91,16 @@
         <!-- Section 3: Education  -->
         <section id="education">
             <h2>education\</h2>
-            <img src="./cseImage.png" alt="CSE" class="img3 image">
-            <div class="para3 paragraph">Pursuing a degree in Computer Science Engineering at Hemvati Nandan Bahuguna
+            <img src="./cseImage.png" alt="CSE" class="education-img1 image">
+            <div class="education-para1 paragraph">Pursuing a degree in Computer Science Engineering at Hemvati Nandan
+                Bahuguna
                 Garhwal University has been immensely rewarding. My passion for technology drives me to master
                 programming languages and explore new
                 tools. Each project challenges me to innovate and push my technical skills, preparing me to excel in the
                 ever-evolving world of computer science.</div>
-            <img src="./hnbguImage.jpg" alt="HNBGU" class="img4 image">
-            <div class="para4 paragraph">Hemvati Nandan Bahuguna Garhwal University, situated in Uttarakhand, is known
+            <img src="./hnbguImage.jpg" alt="HNBGU" class="education-img2 image">
+            <div class="education-para2 paragraph">Hemvati Nandan Bahuguna Garhwal University, situated in Uttarakhand,
+                is known
                 for its dedication to academic excellence and research. The university provides a vibrant learning
                 atmosphere with diverse courses and a strong emphasis on innovation and holistic growth. The dedicated
                 faculty and top-notch facilities nurture students to excel and reach their full potential in their
@@ -103,14 +111,14 @@
         <!-- parallax Image -->
         <div class="gfg"></div>
 
-
         <!-- Section 4: Skills -->
         <section id="skills">
             <h2>skills\</h2>
-            <div class="para5 paragraph">Here are the skills I bring to the table, shaped by my journey in computer
+            <div class="skills-para1 paragraph">Here are the skills I bring to the table, shaped by my journey in
+                computer
                 science. Let's explore!</div>
-            <img src="./dsa.png" alt="DSA" class="img5 image">
-            <div class="para6 paragraph">
+            <img src="./dsa.png" alt="DSA" class="skills-img1 image">
+            <div class="skills-para2 paragraph">
                 <ul>
                     <li>Programming languages: C/C++/JAVA</li>
                     <li>Web Development: HTML/CSS/JS</li>
@@ -120,12 +128,13 @@
                     <li>Opearting System: Linux/Windows</li>
                 </ul>
             </div>
-            <img src="./linux.png" alt="Linux" class="img6 image">
+            <img src="./linux.png" alt="Linux" class="skills-img2 image">
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
+
         <!--Section 5: Contact -->
         <section id="contact">
             <h2>contact\</h2>
