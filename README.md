@@ -31,7 +31,9 @@ Check out live demo here: https://zuhaib-hanfi.github.io/Portfolio/
 Feel free to reach out me via:
 
 **Email**: hanfizuhaib@gmail.com
+
 **LinkedIn**: https://www.linkedin.com/in/zuhaib-hanfi
+
 **Twitter(X)**: https://x.com/ZuhaibHanfi
 
 
