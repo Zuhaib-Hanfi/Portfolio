@@ -433,6 +433,12 @@ header {
     animation: from-left 2.5s ease-out 0.5s 1 forwards;
 }
 
+/*Contact section Heading styling*/
+#contact>h2 {
+    width: 60vw;
+    text-align: center;
+}
+
 /* Contact form styling */
 form {
     padding: 0 2vw 0 2vw;
@@ -453,11 +459,11 @@ form>button {
     align-items: center;
 }
 
-/* Button,input,textarea styling */
-form>button,
+/* input,textarea styling */
 form>input,
 form>textarea {
     border: none;
+    width: 58vw;
 }
 
 /* Contact Section Animation */
