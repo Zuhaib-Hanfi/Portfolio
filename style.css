@@ -2,16 +2,13 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
 /* For hiding the scrollbar */
 ::-webkit-scrollbar {
     display: none;
-}
-
-html {
-    overflow-x: hidden;
 }
 
 /* BODY */
@@ -21,6 +18,7 @@ body {
     background-size: cover;
     background-attachment: fixed; */
     background-color: #0A192F;
+    max-width: 100vw;
 }
 
 /* HEADER */
@@ -138,7 +136,7 @@ header {
 
     overflow: hidden;
     position: relative;
-    /* background-color: olive; */
+    background-color: olive;
 }
 
 /* Introduction section */
@@ -215,7 +213,7 @@ header {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 1.5rem;
     overflow: hidden;
-    /* background-color: olivedrab; */
+    background-color: olivedrab;
 }
 
 #about>h2,
@@ -380,7 +378,7 @@ header {
     overflow: hidden;
 
 
-    /* background-color: olive; */
+    background-color: olive;
 }
 
 #skills>h2 {
@@ -400,7 +398,7 @@ header {
 }
 
 .para6 {
-    height: 20rem;
+    /* height: 20rem; */
     width: 15rem;
     text-align: start;
     grid-column: 2/3;
@@ -410,6 +408,7 @@ header {
     align-self: center;
     animation: slide-bottom 2s ease-out 0.5s 1 forwards;
 }
+
 
 .img5 {
     grid-column: 1/2;
@@ -448,9 +447,11 @@ header {
     padding: 2vh 20vw 2vh 20vw;
     margin-top: 20vh;
     animation: from-left 2.5s ease-out 0.5s 1 forwards;
+    background-color: olive;
 }
 
 form {
+    /* width: 60vw; */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -512,6 +513,7 @@ form>textarea {
 
     .navbar{
         padding-right: 0.4rem;
+        max-width: 100vw;
     }
     .right {
         width: 40vw;
@@ -578,7 +580,7 @@ form>textarea {
 
     #skills {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.4fr repeat(3, 1fr);
+        grid-template-rows: 0.3fr 0.5fr repeat(3, 1fr);
         row-gap: 1.2rem;
         justify-content: center;
         align-items: center;
@@ -587,7 +589,7 @@ form>textarea {
     #about,
     #education {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr repeat(4, 1fr);
+        grid-template-rows: 0.2fr 0.8fr 1fr 0.8fr 1fr;
         row-gap: 1.2rem;
         justify-content: center;
         align-items: center;
