@@ -171,7 +171,7 @@ header {
     align-self: center;
     font-size: 1.8rem;
     /* font-weight: bold; */
-    font-family: cursive, montserrat, sans-serif;
+    font-family: montserrat, sans-serif;
     color: #CACAEE;
     text-align: justify;
     padding: 1rem;
@@ -214,6 +214,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 1.5rem;
+    overflow: hidden;
     /* background-color: olivedrab; */
 }
 
@@ -230,8 +231,8 @@ header {
 
 /* General css for images in section 2 & 3 */
 .image {
-    height: 38vh;
-    width: 28vh;
+    height: 20rem;
+    width: 15rem;
     overflow: hidden;
     border: 1px solid white;
     box-shadow: 0 0 8px 4px #3e455576;
@@ -264,8 +265,8 @@ header {
     box-shadow: 0 0 8px 4px #3e455576;
     border-radius: 10px;
     color: #CACAEE;
-    font-size: 1.15rem;
-    font-family: cursive, montserrat, sans-serif;
+    font-size: 1.1rem;
+    font-family: montserrat, sans-serif;
     padding: 1rem;
     text-align: justify;
 }
@@ -399,7 +400,8 @@ header {
 }
 
 .para6 {
-    max-height: 284px;
+    height: 20rem;
+    width: 15rem;
     text-align: start;
     grid-column: 2/3;
     grid-row: 3/4;
@@ -460,6 +462,15 @@ form {
 form>button {
     width: 6rem;
     justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form>button,
+form>input,
+form>textarea {
+    border: none;
 }
 
 /* Contact Animation */
@@ -496,18 +507,21 @@ form>button {
 
 /* Media Queries */
 
-@media (max-width:600px) {
+@media (max-width:800px) {
     /* HAMBURGER NAVBAR */
 
-
-    .right {
-        width: 50vw;
+    .navbar{
+        padding-right: 0.4rem;
     }
+    .right {
+        width: 40vw;
+    }
+    
 
     .links-container {
         overflow: hidden;
         flex-direction: column;
-        align-items: center;
+        align-items:center;
         justify-content: start;
         position: fixed;
         top: 0px;
@@ -523,7 +537,6 @@ form>button {
     .links-container>a {
         box-sizing: border-box;
         height: auto;
-        width: 100%;
         margin: 1rem;
     }
 
@@ -536,12 +549,12 @@ form>button {
     }
 
     .close-hamburger-button {
-        transform: translateX(-27px) translateY(8px);
-        margin-bottom: 1rem;
+        margin:1rem 0 1rem 0;
     }
 
     #hamburger-active:checked~.links-container {
         left: 0;
+        transition: 1s;
     }
 
 
@@ -556,26 +569,36 @@ form>button {
 
     .intro-name,
     .intro-about {
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
 
     .intro-name>span {
         font-size: 10vw;
     }
 
-    #skills,
-    #about,
-    #education {
+    #skills {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr repeat(4, 1fr);
-        gap: 0rem;
+        grid-template-rows: 0.2fr 0.4fr repeat(3, 1fr);
+        row-gap: 1.2rem;
         justify-content: center;
         align-items: center;
     }
 
-    .image {
-        width: 30vh;
+    #about,
+    #education {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr repeat(4, 1fr);
+        row-gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
     }
+
+    /* .image,.para6 {
+        width: 20rem;
+    }
+    .para6{
+        height: 38vh;
+    } */
 
     #about>h2,
     .para1,
