@@ -60,9 +60,9 @@ header {
     text-transform: uppercase;
     font-family: Nova Square;
     border: 1px solid transparent;
-    border-radius: 15px;
     font-size: 1.3rem;
     padding: 0.4rem;
+    transition: all 0.5s ease-out;
 }
 
 /* Hiding the hamburger icons for larger screen*/
@@ -70,15 +70,16 @@ header {
 .open-hamburger-button,
 .close-hamburger-button {
     display: none;
+    transition: all 0.5s ease-out;
 }
 
 /* Hover property for anchor tags and buttons on the NavBar */
 .links-container>a:hover,
-.close-hamburger-button,
-.open-hamburger-button {
+.close-hamburger-button:hover,
+.open-hamburger-button:hover {
     background-color: transparent;
     border: 1px solid white;
-    box-shadow: 0 0 8px 2px rgba(245, 245, 245, 0.419);
+    box-shadow: 0 0 8px 6px rgb(57, 124, 162);
     border-radius: 12px;
     scale: 1.02;
 }
@@ -101,13 +102,14 @@ header {
     font-size: 1.3rem;
     padding: 0.4rem;
     border: 1px solid transparent;
+    transition: all 0.5s ease-out;
 }
 
 /* Hover property for Social Icons */
 .right>a:hover {
     background-color: transparent;
     border: 1px solid white;
-    box-shadow: 0 0 8px 2px rgba(245, 245, 245, 0.419);
+    box-shadow: 0 0 8px 6px rgb(57, 124, 162);
     color: #CACAEE;
     border-radius: 15px;
     scale: 1.1;
@@ -125,7 +127,7 @@ header {
     padding-bottom: 5vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 1rem;
+    row-gap: 1.1rem;
     overflow: hidden;
     position: relative;
 }
@@ -144,6 +146,7 @@ header {
     border-radius: 10px;
     position: relative;
     animation: load 3.5s ease-out 0.1s 1 forwards;
+    transition: all 0.5s ease-out;
 }
 
 /* My Name styling */
@@ -167,6 +170,7 @@ header {
     border-radius: 10px;
     position: relative;
     animation: load 2.5s ease-out 0.1s 1 forwards;
+    transition: all 0.5s ease-out;
 }
 
 /* Animation for Introduction section || Home section */
@@ -180,6 +184,14 @@ header {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* HOVER PROPETIES FOR INTRO SECTION */
+.intro-name:hover,
+.intro-about:hover {
+    cursor: pointer;
+    scale: 1.02;
+    box-shadow: 0 0 8px 8px rgb(57, 124, 162);
 }
 
 
@@ -221,6 +233,13 @@ header {
     border: 1px solid white;
     box-shadow: 0 0 8px 4px #3e455576;
     border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+
+/* HOVER PROPERTY FOR IMAGES */
+.image:hover {
+    scale: 1.02;
+    box-shadow: 0 0 8px 8px rgb(57, 124, 162);
 }
 
 /* First Image of About section styling */
@@ -245,7 +264,7 @@ header {
 .paragraph {
     overflow: hidden;
     background-color: transparent;
-    /* border: 1px solid white; */
+    border: 1px solid #051021;
     box-shadow: 0 0 8px 4px #3e455576;
     border-radius: 10px;
     color: #CACAEE;
@@ -253,6 +272,14 @@ header {
     font-family: montserrat, sans-serif;
     padding: 1rem;
     text-align: justify;
+    transition: all 0.5s ease-out;
+}
+
+/* HOVER PROPERTY FOR PARAGRAPHS (also for buttons and inputs in contacts) */
+.paragraph:hover {
+    scale: 1.02;
+    border: 1px solid white;
+    box-shadow: 0 0 8px 8px rgb(57, 124, 162);
 }
 
 /* First Paragraph of About section styling */
@@ -341,7 +368,7 @@ header {
 /* GFG image Paralax effect stying */
 .gfg {
     width: 100vw;
-    height: 30vh;
+    height: 35vh;
     margin-top: 10vh;
     background-image: url(gfg.png);
     background-size: contain;
@@ -353,13 +380,13 @@ header {
 /* SKILLS Section Styling */
 #skills {
     min-height: 60vh;
-    padding: 15vh 20vw 2vh 20vw;
+    padding: 10vh 20vw 2vh 20vw;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 1fr;
-    gap: 2rem;
+    grid-template-rows: 0.25fr 0.3fr 1fr;
+    gap: 1.2rem;
     overflow: hidden;
 }
 
@@ -382,6 +409,14 @@ header {
 }
 
 /* Second Paragraph of Skills section styling */
+.skills-para2>ul {
+    list-style-type: none;
+}
+
+.skills-para2>ul>li {
+    margin-bottom: 10px;
+}
+
 .skills-para2 {
     width: 15rem;
     text-align: start;
@@ -430,7 +465,7 @@ header {
 #contact {
     padding: 2vh 20vw 2vh 20vw;
     margin-top: 20vh;
-    animation: from-left 2.5s ease-out 0.5s 1 forwards;
+    /* animation: from-left 2.5s ease-out 0.5s 1 forwards; */
 }
 
 /*Contact section Heading styling*/
@@ -462,7 +497,7 @@ form>button {
 /* input,textarea styling */
 form>input,
 form>textarea {
-    border: none;
+    border: 1px solid #051021;
     width: 58vw;
 }
 
