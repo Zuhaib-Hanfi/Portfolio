@@ -297,7 +297,6 @@ header {
     grid-row: 3/4;
     justify-self: start;
     align-self: end;
-
     animation: left-slide 2.5s ease-out 0.5s 1 forwards;
 }
 
@@ -388,6 +387,7 @@ header {
     grid-template-rows: 0.25fr 0.3fr 1fr;
     gap: 1.2rem;
     overflow: hidden;
+
 }
 
 /* Heading of Skills section styling */
