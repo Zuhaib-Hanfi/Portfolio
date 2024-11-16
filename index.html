@@ -7,7 +7,8 @@
     <title>Hanfi Portfolio</title>
     <link rel="Icon" href="./favicon.ico">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Icon Packs Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Preconnecting to Google's font servers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,9 +55,14 @@
 
             <!-- Right Section of Navbar with Social Icons -->
             <div class="right">
-                <a class="fab fa-linkedin" href="https://www.linkedin.com/in/zuhaib-hanfi"></a> <!-- LinkedIn Icon -->
-                <a href="https://x.com/ZuhaibHanfi" class="fab fa-twitter"></a> <!-- X (Twitter) Icon -->
-                <a href="mailto:hanfizuhaib@gmail.com" class="fas fa-envelope"></a> <!-- Mail Icon -->
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/zuhaib-hanfi" class="bx bxl-linkedin-square"></a>
+                <!-- X (Twitter) Icon -->
+                <a href="https://x.com/ZuhaibHanfi" class="bx bxl-twitter"></a>
+                <!-- GitHub Icon -->
+                <a href="https://github.com/Zuhaib-Hanfi" class="bx bxl-github"></a>
+                <!-- Mail Icon -->
+                <a href="mailto:hanfizuhaib@gmail.com" class="bx bx-envelope"></a>
             </div>
         </nav>
     </header>
@@ -142,17 +148,28 @@
                 <input type="text" name="Uname" placeholder="Enter Name" required class="paragraph"
                     pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces.">
                 <input type="email" name="Email" placeholder="Enter Email" required class="paragraph">
-                <textarea name="Feedback" class="paragraph" required placeholder="Provide Your Feedback" minlength="10"
-                    title="Please enter at least 10 characters."></textarea>
-                <button class="paragraph">Submit</button>
+                <textarea name="Feedback" class="paragraph" required placeholder="Write Your Messages here"
+                    minlength="10" title="Please enter at least 10 characters."></textarea>
+                <button class="paragraph">SEND</button>
             </form>
 
         </section>
 
         <!-- FOOT -->
         <div class="foot">
-            <p>Built and Designed by HANFI</p>
-            <p>All rights reversed &copy;</p>
+            <!-- Social Icons (LINKS) in footer -->
+            <div class="footer-icons">
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/zuhaib-hanfi" class="bx bxl-linkedin-square"></a>
+                <!-- X (Twitter) Icon -->
+                <a href="https://x.com/ZuhaibHanfi" class="bx bxl-twitter"></a>
+                <!-- GitHub Icon-->
+                <a href="https://github.com/Zuhaib-Hanfi" class="bx bxl-github"></a>
+                <!-- Mail Icon -->
+                <a href="mailto:hanfizuhaib@gmail.com" class="bx bx-envelope"></a>
+            </div>
+            <!-- Copyright -->
+            <p>Built and Designed by HANFI | All Rights Reversed &copy;</p>
         </div>
     </footer>
 </body>
