@@ -465,7 +465,7 @@ header {
 #contact {
     padding: 2vh 20vw 2vh 20vw;
     margin-top: 20vh;
-    /* animation: from-left 2.5s ease-out 0.5s 1 forwards; */
+    animation: from-left 2.5s ease-out 0.5s 1 forwards;
 }
 
 /*Contact section Heading styling*/
