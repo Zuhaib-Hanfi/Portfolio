@@ -19,6 +19,8 @@ I haven't use **On Scroll Animation** because it requires JS and which is porhib
 - **HTML5**
 - **CSS3**
 - **GitHub Pages**
+- **Boxicons:** for Social Icons.
+- **Formspree:** used it to send data filled in the contact form to my e-mail. 
 
 ## Setup Instructions:-
 
