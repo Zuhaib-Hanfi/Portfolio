@@ -12,7 +12,7 @@ Welcome to my personal portfolio website! This site showcases my eduction, about
 ## Note:-
 
 I haven't use **On Scroll Animation** because it requires JS and which is porhibited to use in this competition, we can do this by using CSS Feature **animation-timeline:view();** but some browsers doesn't support it and *view()* is not a standard CSS feature so it is not recommended.
-**To see the animation of particular sections you have to navigate to that section and refresh the website**
+**In order to see the animation of particular sections you have to navigate to that section and refresh the website**.
 
 ## Technologies Used:-
 
